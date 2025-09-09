@@ -8,24 +8,32 @@ This repository provides tools and drivers for working with **Channel State Info
 
 Make sure your system is up to date and install the required dependencies.
 
-### For `FeitCSI-iwlwifi`
 ```bash
+git clone https://github.com/mustafaemreciftci/FeitCSI-RaspberryPi
+
 sudo apt update
 sudo apt install linux-headers-generic flex bison dkms
 
 sudo apt update
 sudo apt install libgtkmm-3.0-dev libnl-genl-3-dev libiw-dev libpcap-dev
+```
 
-git clone https://github.com/mustafaemreciftci/FeitCSI-RaspberryPi
+### For `FeitCSI-iwlwifi`
+
+```bash
 cd FeitCSI-RaspberryPi
-
 cd FeitCSI-iwlwifi
 
 make defconfig-iwlwifi-public
 make
 sudo make install
+```
 
+### For `FeitCSI`
+
+```bash
 cd ../FeitCSI
 
 make
 sudo make install
+```
