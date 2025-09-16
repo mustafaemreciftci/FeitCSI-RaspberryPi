@@ -12,7 +12,7 @@ Make sure your system is up to date and install the required dependencies.
 git clone https://github.com/mustafaemreciftci/FeitCSI-RaspberryPi
 
 sudo apt update
-sudo apt install linux-headers-generic flex bison dkms
+sudo apt install linux-headers-$(uname -r) flex bison dkms
 
 sudo apt update
 sudo apt install libgtkmm-3.0-dev libnl-genl-3-dev libiw-dev libpcap-dev
